@@ -24,4 +24,9 @@ defmodule SavetheurlWeb.LinkController do
         render(conn, "new.html", changeset: changeset)
     end
   end
+
+  def delete(conn, %{"id" => url_id}) do
+     Links.delete_url(url_id)
+     conn |> redirect(to: Routes.link_path(conn, :index))
+  end
 end

@@ -15,4 +15,13 @@ defmodule Savetheurl.Links do
     |> Url.changeset(attrs)
     |> Repo.insert()
   end
+
+  def delete_url(id) do
+    url = get_url(id)
+    |> Repo.delete
+  end
+
+  def get_url(id) do
+    Repo.get(Url, id)
+  end
 end
