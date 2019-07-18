@@ -1,0 +1,13 @@
+<section class="mt-16 bg-gray-100 p-5">
+    <%= form_for @changeset,  Routes.link_path(@conn, :create), fn f ->  %>
+        <div>
+        <%= text_input  f, :title, placeholder: "Enter the title",class: "w-full p-2 border-2 border-gray-700 rounded my-1" %>
+        <%= error_tag f, :title %>
+        </div>
+        <div>
+        <%= url_input  f, :url, placeholder: "Enter the url",class: "w-full p-2 border-2 border-gray-700 rounded my-1" %>
+        <%= error_tag f, :url %>
+        </div>
+        <%= submit "Submit new url", class: "mt-4 border-2 border-gray-900 rounded p-2 bg-gray-900 text-gray-100" %>
+    <% end %>
+</section>
