@@ -1,6 +1,9 @@
 module.exports = {
   theme: {
-    extend: {}
+      fontFamily: {
+          'body': ['"HK Grotesk"', 'sans-serif'],
+          'display': ['"HK Grotesk"', 'sans-serif'],
+      }
   },
   variants: {},
   plugins: []

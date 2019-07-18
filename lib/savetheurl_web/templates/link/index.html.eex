@@ -1,0 +1,9 @@
+<section class="mt-16">
+    <h1 class="font-bold uppercase text-gray-700">Saved Links</h1>
+<%= for url <- @urls do %>
+    <div class="mt-2 bg-gray-100 shadow-lg rounded p-5">
+    <p class="text-xl font-bold"><%= url.title %></p>
+    <a href="<%= url.url %>" class="text-md border-gray-700 border-b-2"><%= url.url %></p>
+    </div>
+<% end %>
+</section>

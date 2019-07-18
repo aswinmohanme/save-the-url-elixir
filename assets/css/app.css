@@ -1,5 +1,18 @@
 /* This file is for your main application css. */
 
 @tailwind base;
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url("/fonts/HKGrotesk-Regular.otf") format("opentype");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "HK Grotesk";
+    src: url("/fonts/HKGrotesk-Bold.otf") format("opentype");
+    font-weight: 700;
+}
+
 @tailwind components;
 @tailwind utilities;
