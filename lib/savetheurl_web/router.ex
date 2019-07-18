@@ -16,7 +16,7 @@ defmodule SavetheurlWeb.Router do
   scope "/", SavetheurlWeb do
     pipe_through :browser
 
-    get "/", PageController, :index
+    get "/", LinkController, :index
     resources "/links", LinkController, only: [:index, :show, :new, :create, :delete]
   end
 
