@@ -9,9 +9,11 @@
     <link href="<%= Routes.static_path(@conn, "/css/app.css") %>" rel="stylesheet" />
 </head>
 
-<body>
-    <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
-    <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+<body class="p-5 bg-gray-100">
+    <nav>
+        <p class="text-md text-gray-900 text-lg">save-url</p>
+    </nav>
+
     <%= render @view_module, @view_template, assigns %>
     <script type="text/javascript" src="<%= Routes.static_path(@conn, "/js/app.js") %>"></script>
 </body>
