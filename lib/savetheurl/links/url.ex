@@ -12,7 +12,7 @@ defmodule Savetheurl.Links.Url do
   def changeset(url, attrs) do
     url
     |> cast(attrs, [:title, :url])
-    |> validate_required([:title, :url])
+    |> validate_required([:url])
     |> unique_constraint(:url)
   end
 end
