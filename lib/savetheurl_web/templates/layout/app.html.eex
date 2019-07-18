@@ -9,9 +9,10 @@
     <link href="<%= Routes.static_path(@conn, "/css/app.css") %>" rel="stylesheet" />
 </head>
 
-<body class="p-5 bg-gray-100">
-    <nav>
-        <p class="text-md text-gray-900 text-lg">save-url</p>
+<body class="p-3 bg-gray-200">
+    <nav class="p-4 px-5 flex justify-between items-center bg-gray-100 rounded text-md text-gray-700 text-lg shadow-lg">
+        <p class="font-bold">Save</p>
+        <p class="border-gray-700 border-b-2 text-gray-900">+ submit</p>
     </nav>
 
     <%= render @view_module, @view_template, assigns %>
