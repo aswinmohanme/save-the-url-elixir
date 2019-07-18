@@ -12,7 +12,7 @@
 <body class="p-3 bg-gray-200 font-body text-gray-700 max-w-3xl mx-auto">
     <nav class="p-4 px-5 flex justify-between items-center bg-gray-100 rounded text-md text-gray-700 text-lg shadow-lg">
         <a href="<%= Routes.link_path(@conn, :index) %>" class="font-bold">Save</a>
-        <a href="<%= Routes.link_path(@conn, :new) %>" class="border-gray-700 border-b-2 text-gray-900">+ submit</a>
+        <a href="<%= Routes.link_path(@conn, :new) %>" class="border-gray-500 border-b-2 text-gray-900">+ submit</a>
     </nav>
 
     <%= render @view_module, @view_template, assigns %>
